@@ -4,90 +4,148 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pietro Capriata — Sviluppatore e innovatore</title>
-<meta name="description" content="Pietro Capriata, sviluppatore e innovatore. Sviluppo web e front-end, intelligenza artificiale, formazione e innovazione digitale.">
+<meta name="description" content="Pietro Capriata, sviluppatore e innovatore a Omegna (Piemonte). Sviluppo web e front-end, intelligenza artificiale, formazione e innovazione digitale.">
+<meta name="author" content="Pietro Capriata">
 <meta property="og:title" content="Pietro Capriata — Sviluppatore e innovatore">
 <meta property="og:description" content="Sviluppo web e front-end, intelligenza artificiale, formazione e innovazione digitale.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pietrocapriata.me/">
+<meta property="og:locale" content="it_IT">
+<link rel="canonical" href="https://pietrocapriata.me/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232f6fed'/%3E%3Ctext x='50' y='68' font-size='54' font-family='system-ui,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EPC%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pietro Capriata",
+  "url": "https://pietrocapriata.me/",
+  "jobTitle": "Sviluppatore e innovatore",
+  "address": { "@type": "PostalAddress", "addressLocality": "Omegna", "addressRegion": "Piemonte", "addressCountry": "IT" },
+  "knowsLanguage": ["it", "en", "fr"],
+  "sameAs": ["https://www.linkedin.com/in/pietrocappa/", "https://github.com/pietrondo"]
+}
+</script>
 <style>
   :root {
     --bg: #ffffff;
-    --fg: #16181d;
+    --fg: #14161b;
     --muted: #5b6472;
-    --line: #e6e9ef;
+    --line: #e7eaf0;
     --accent: #2f6fed;
-    --card: #f7f8fa;
+    --accent-fg: #ffffff;
+    --card: #f7f8fb;
+    --shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 8px 24px -12px rgba(16, 24, 40, .12);
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #0f1116;
+      --bg: #0e1015;
       --fg: #eef1f6;
       --muted: #9aa4b2;
-      --line: #242832;
+      --line: #232733;
       --accent: #6f9bff;
-      --card: #171a21;
+      --accent-fg: #0b1020;
+      --card: #161922;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -18px rgba(0,0,0,.7);
     }
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   body {
     margin: 0;
-    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: var(--fg);
     background: var(--bg);
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
-  a { color: var(--accent); }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.25rem; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: .3rem; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 1.25rem; }
   .skip {
     position: absolute; left: -9999px; top: 0;
-    background: var(--accent); color: #fff; padding: .6rem 1rem; border-radius: 0 0 .5rem 0;
+    background: var(--accent); color: var(--accent-fg);
+    padding: .6rem 1rem; border-radius: 0 0 .5rem 0; z-index: 20;
   }
-  .skip:focus { left: 0; z-index: 10; }
-  header { padding: 5rem 0 2rem; }
-  h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.15; margin: 0 0 .4rem; letter-spacing: -.02em; }
-  .headline { font-size: 1.15rem; color: var(--muted); margin: 0; }
-  .place { color: var(--muted); font-size: .95rem; margin-top: .3rem; }
-  .quick { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+  .skip:focus { left: 0; }
+
+  header.hero { padding: clamp(3rem, 9vw, 5.5rem) 0 1.5rem; }
+  .monogram {
+    width: 64px; height: 64px; border-radius: 18px;
+    display: grid; place-items: center;
+    background: linear-gradient(150deg, var(--accent), color-mix(in srgb, var(--accent) 55%, #8b5cf6));
+    color: #fff; font-weight: 800; font-size: 1.4rem; letter-spacing: .02em;
+    box-shadow: var(--shadow); margin-bottom: 1.3rem;
+  }
+  h1 { font-size: clamp(2rem, 6vw, 2.7rem); line-height: 1.12; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .headline { font-size: 1.16rem; color: var(--muted); margin: 0; }
+  .place { color: var(--muted); font-size: .95rem; margin: .35rem 0 0; }
+  .quick { list-style: none; padding: 0; margin: 1.4rem 0 0; display: flex; flex-wrap: wrap; gap: .55rem; }
   .quick a {
-    display: inline-block; padding: .5rem 1rem; border: 1px solid var(--line);
-    border-radius: 999px; text-decoration: none; font-size: .92rem; font-weight: 500;
+    display: inline-flex; align-items: center; gap: .4rem;
+    padding: .5rem 1rem; border: 1px solid var(--line); background: var(--card);
+    border-radius: 999px; text-decoration: none; font-size: .92rem; font-weight: 550;
+    transition: border-color .15s ease, transform .15s ease;
   }
-  .quick a:hover { border-color: var(--accent); }
+  .quick a:hover { border-color: var(--accent); transform: translateY(-1px); }
+
   main { padding-bottom: 3rem; }
-  section { padding: 2rem 0; border-top: 1px solid var(--line); }
-  h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 0 0 1.1rem; font-weight: 600; }
+  section { padding: 2.2rem 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-size: .78rem; text-transform: uppercase; letter-spacing: .13em;
+    color: var(--muted); margin: 0 0 1.2rem; font-weight: 650;
+  }
   p { margin: 0 0 1rem; }
   p:last-child { margin-bottom: 0; }
+
   .cards { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: .75rem; padding: 1.1rem 1.2rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: .8rem; padding: 1.15rem 1.25rem; }
   .card h3 { margin: 0 0 .35rem; font-size: 1rem; }
   .card p { margin: 0; color: var(--muted); font-size: .93rem; }
+
   .entry { padding: 0 0 1.1rem; margin-bottom: 1.1rem; border-bottom: 1px dashed var(--line); }
   .entry:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
-  .entry h3 { margin: 0; font-size: 1.02rem; }
-  .entry .role { font-weight: 500; }
-  .entry .when { color: var(--muted); font-size: .88rem; margin: .1rem 0 .35rem; }
+  .entry h3 { margin: 0; font-size: 1.03rem; }
+  .entry .role { font-weight: 550; margin: .1rem 0 0; }
+  .entry .when { color: var(--muted); font-size: .88rem; margin: .1rem 0 .4rem; }
   .entry p { font-size: .95rem; color: var(--muted); }
-  .tags { list-style: none; padding: 0; margin: .5rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem; }
-  .tags li { font-size: .82rem; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .2rem .7rem; color: var(--muted); }
-  .links-list { list-style: none; padding: 0; margin: 0; }
-  .links-list li { margin-bottom: .5rem; }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: .25rem; }
-  footer { border-top: 1px solid var(--line); padding: 1.5rem 0 3rem; color: var(--muted); font-size: .88rem; }
+
+  .tags { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+  .tags li { font-size: .82rem; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .22rem .72rem; color: var(--muted); }
+
+  ul.links-list { list-style: none; padding: 0; margin: 0; }
+  ul.links-list li { margin-bottom: .55rem; }
+  ul.links-list li:last-child { margin-bottom: 0; }
+
+  .repo-grid { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .repo {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--line); border-radius: .8rem;
+    padding: 1rem 1.1rem; transition: border-color .15s ease, transform .15s ease;
+  }
+  .repo:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .repo strong { display: block; font-size: .98rem; }
+  .repo span { display: block; color: var(--muted); font-size: .88rem; margin-top: .2rem; }
+  .repo em { font-style: normal; color: var(--muted); font-size: .78rem; }
+
+  footer { border-top: 1px solid var(--line); padding: 1.6rem 0 3rem; color: var(--muted); font-size: .88rem; }
+  footer .row { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; justify-content: space-between; }
 </style>
 </head>
 <body>
+
 <a class="skip" href="#main">Salta al contenuto</a>
 <div class="wrap">
-  <header>
+  <header class="hero">
+    <div class="monogram" aria-hidden="true">PC</div>
     <h1>Pietro Capriata</h1>
     <p class="headline">Sviluppatore e innovatore</p>
     <p class="place">Omegna, Piemonte, Italia</p>
     <ul class="quick">
-      <li><a href="https://www.linkedin.com/in/pietrocappa/">LinkedIn</a></li>
+      <li><a href="https://www.linkedin.com/in/pietrocappa/" rel="me">LinkedIn</a></li>
+      <li><a href="https://github.com/pietrondo" rel="me">GitHub</a></li>
       <li><a href="https://dokimazo.io/">Dokimazo</a></li>
-      <li><a href="https://www.corovalgrande.it/">Coro Val Grande</a></li>
+      <li><a href="http://blog.pietrocapriata.me">Blog</a></li>
     </ul>
   </header>
 
@@ -117,7 +175,7 @@
         </div>
       </div>
       <ul class="tags">
-        <li>JavaScript</li><li>CSS</li><li>HTML</li><li>PHP</li><li>SQL</li><li>Linux</li><li>IA</li><li>WordPress</li><li>Formazione</li>
+        <li>JavaScript</li><li>TypeScript</li><li>Python</li><li>HTML</li><li>CSS</li><li>PHP</li><li>SQL</li><li>Linux</li><li>Docker</li><li>IA</li><li>WordPress</li><li>Formazione</li>
       </ul>
     </section>
 
@@ -161,14 +219,46 @@
       <div class="entry">
         <h3>Electric Land srl</h3>
         <p class="role">Ricerca e Sviluppo e social marketing</p>
-        <p class="when">dic 2015 – giu 2019 · Verbano-Cusio-Ossola</p>
+        <p class="when">dic 2015 – giu 2019 · Verbania-Cusio-Ossola</p>
         <p>Formazione, gestione e innovazione tecnologica, anche per il Servizio Civile e progetti come BecomingOssola.</p>
       </div>
     </section>
 
     <section aria-labelledby="projects">
       <h2 id="projects">Progetti</h2>
-      <ul class="links-list">
+      <div class="repo-grid">
+        <a class="repo" href="https://github.com/pietrondo/pit-panel">
+          <strong>pit-panel</strong>
+          <span>Pannello di controllo per server: app, domini, SSL, sicurezza e monitoraggio.</span>
+          <em>Python · FastAPI</em>
+        </a>
+        <a class="repo" href="https://github.com/pietrondo/SR">
+          <strong>SR</strong>
+          <span>Ricompilazione statica di videogiochi storici in eseguibili nativi Windows/Linux.</span>
+          <em>Reverse engineering</em>
+        </a>
+        <a class="repo" href="https://github.com/pietrondo/CrossMix-OS">
+          <strong>CrossMix-OS</strong>
+          <span>Sistema operativo potenziato per la console portatile TrimUI Smart Pro.</span>
+          <em>GLSL · Linux</em>
+        </a>
+        <a class="repo" href="https://github.com/pietrondo/age-of-agents">
+          <strong>Age of Agents</strong>
+          <span>Le sessioni dei coding agent che crescono in un regno pixel-art.</span>
+          <em>TypeScript</em>
+        </a>
+        <a class="repo" href="https://github.com/pietrondo/lingua">
+          <strong>Lingua</strong>
+          <span>Un linguaggio di programmazione comprensibile dall'IA.</span>
+          <em>Python</em>
+        </a>
+        <a class="repo" href="https://github.com/pietrondo/DeepTutor">
+          <strong>DeepTutor</strong>
+          <span>Assistente di apprendimento personalizzato agent-native.</span>
+          <em>Python</em>
+        </a>
+      </div>
+      <ul class="links-list" style="margin-top:1.1rem">
         <li><a href="https://www.corovalgrande.it/">Coro Val Grande</a> — sito web (HTML e JavaScript).</li>
         <li><strong>Associazione My Way</strong> — sito in WordPress.</li>
       </ul>
@@ -225,7 +315,10 @@
   </main>
 
   <footer>
-    &copy; <span id="year"></span> Pietro Capriata · <a href="https://www.linkedin.com/in/pietrocappa/">linkedin.com/in/pietrocappa</a>
+    <div class="row">
+      <span>&copy; <span id="year"></span> Pietro Capriata</span>
+      <span><a href="https://www.linkedin.com/in/pietrocappa/">linkedin.com/in/pietrocappa</a></span>
+    </div>
   </footer>
 </div>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
